@@ -20,6 +20,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -169,10 +171,27 @@
     <Compile Include="Migrations\202106151413550_InitialModel.Designer.cs">
       <DependentUpon>202106151413550_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106151805210_AddIsSubscribedToCustomer.cs" />
+    <Compile Include="Migrations\202106151805210_AddIsSubscribedToCustomer.Designer.cs">
+      <DependentUpon>202106151805210_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106151824532_AddMembershipType.cs" />
+    <Compile Include="Migrations\202106151824532_AddMembershipType.Designer.cs">
+      <DependentUpon>202106151824532_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106151951120_PopulateMembershipTypes.cs" />
+    <Compile Include="Migrations\202106151951120_PopulateMembershipTypes.Designer.cs">
+      <DependentUpon>202106151951120_PopulateMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106152007171_ApplyAnnotationtoCustomerName.cs" />
+    <Compile Include="Migrations\202106152007171_ApplyAnnotationtoCustomerName.Designer.cs">
+      <DependentUpon>202106152007171_ApplyAnnotationtoCustomerName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -245,6 +264,18 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202106151413550_InitialModel.resx">
       <DependentUpon>202106151413550_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106151805210_AddIsSubscribedToCustomer.resx">
+      <DependentUpon>202106151805210_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106151824532_AddMembershipType.resx">
+      <DependentUpon>202106151824532_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106151951120_PopulateMembershipTypes.resx">
+      <DependentUpon>202106151951120_PopulateMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106152007171_ApplyAnnotationtoCustomerName.resx">
+      <DependentUpon>202106152007171_ApplyAnnotationtoCustomerName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
