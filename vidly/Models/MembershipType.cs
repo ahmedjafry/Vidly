@@ -8,7 +8,8 @@ namespace vidly.Models
 {
     public class MembershipType
     {
-        
+        public static readonly byte Unknown = 0;
+        public static readonly byte PayAsYouGo = 1;
         public string Name { get; set; }
         [Required]
         public byte Id { get; set; }
